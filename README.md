@@ -60,6 +60,13 @@ Your application should now be running on http://localhost:3000.
 
 5. Create a new Pull Request.
 
+## Deployment Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/61b0f70a-4ed8-4dda-8120-ce541b647780/deploy-status)](https://app.netlify.com/sites/codequest-journey/deploys)
+
+This badge shows the current deployment status of the CodeQuest Journey project hosted on Netlify.
+
+
 ## Contact
 
 **If you have any questions or suggestions, feel free to reach out:**

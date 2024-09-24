@@ -5,9 +5,9 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleGetStarted = () => {
+    // Navigate only to the Category section
     navigate('/category');
   };
-
 
   return (
     <div className="container mx-auto p-8">
@@ -37,7 +37,7 @@ const Home = () => {
         <h2 className="text-2xl font-semibold mb-4">Resources for You</h2>
         <ul className="list-disc list-inside mb-4">
           <li>📚 <a href="/StudyGuides" className="text-blue-500">Study Guides</a></li>
-          <li>🎥 <a href="/tutorials" className="text-blue-500">Video Tutorials</a></li>
+          <li>🎥 <a href="/VideoTutorials" className="text-blue-500">Video Tutorials</a></li>
         </ul>
       </div>
 
@@ -51,7 +51,7 @@ const Home = () => {
         </ul>
       </div>
 
-      {/*Newsletter Subscription*/}
+      {/* Newsletter Subscription */}
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Stay Updated</h2>
         <p className="mb-4">Subscribe to our newsletter for tips and updates!</p>
