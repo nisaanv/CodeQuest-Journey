@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Category from './components/Category';
-
+import StudyGuides from './components/StudyGuides';
 const App = () => {
   const [questionList, setQuestionList] = useState([]);
 
@@ -16,8 +16,6 @@ const App = () => {
         <header className="bg-gray-900 text-white shadow-md">
           <nav className="container mx-auto p-4 flex items-center justify-center space-x-4">
             <Link to="/" className="hover:text-blue-400">Home</Link>
-            <span>|</span>
-            <Link to="/category" className="hover:text-blue-400">Categories</Link>
           </nav>
         </header>
 
@@ -29,14 +27,16 @@ const App = () => {
               path="/category"
               element={<Category onQuestionStatusChange={handleQuestionStatusChange} />}
             />
+            <Route path="/StudyGuides" element={<StudyGuides />} />
           </Routes>
         </main>
 
         {/* Footer stays at the bottom */}
-        <footer className="bg-gray-800 text-white p-4 text-center mt-auto">
+        <footer className="bg-gray-800  text-white p-4 text-center mt-auto">
           <p>&copy; {new Date().getFullYear()} CodeQuest Journey. All rights reserved.</p>
         </footer>
       </Router>
+      
     </div>
   );
 };
