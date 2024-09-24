@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   @apply bg-gray-100 text-gray-900;
+  @apply min-h-screen flex flex-col;
 }
 
 .dark body {
@@ -94,7 +95,7 @@ footer {
   color: #fff;
   padding: 1rem;
   text-align: center;
-  position: relative;
+  margin-top: auto;
   width: 100%;
 }
 
@@ -110,4 +111,8 @@ footer {
 
 .animate-fadeIn {
   animation: fadeIn 1s ease-in-out;
+}
+
+main {
+  @apply flex-grow; /* Ensures the main content area takes up remaining space */
 }
