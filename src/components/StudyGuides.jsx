@@ -1,7 +1,11 @@
 import React from 'react';
+import Header from './Header';
 
 const StudyGuides = () => {
   return (
+    <div>
+      <Header />
+    
     <div className="container mx-auto p-8">
       <h1 className="text-3xl font-bold mb-6">Study Guides for Data Structures and Algorithms</h1>
       <p className="mb-4">
@@ -66,6 +70,7 @@ const StudyGuides = () => {
         </ul>
       </div>
     </div>
+  </div>
   );
 };
 

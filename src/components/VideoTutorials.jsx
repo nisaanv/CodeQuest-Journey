@@ -1,7 +1,11 @@
 import React from 'react';
+import Header from './Header';
 
 const VideoTutorials = () => {
   return (
+    <div>
+      <Header />
+    
     <div className="video-tutorial-page">
       <h1 className="text-3xl font-bold mb-6 text-center">DSA Video Tutorials</h1>
 
@@ -62,6 +66,7 @@ const VideoTutorials = () => {
       </div>
       
     </div>
+  </div>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Header from './Header';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -10,6 +11,8 @@ const Home = () => {
   };
 
   return (
+    <div>
+      <Header />
     <div className="container mx-auto p-8">
       <h1 className="text-3xl font-bold mb-6">Welcome to CodeQuest Journey</h1>
       <p className="mb-4">Track your DSA progress with categorized questions!</p>
@@ -65,6 +68,7 @@ const Home = () => {
         </button>
       </div>
     </div>
+  </div>
   );
 };
 
