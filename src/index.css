@@ -126,3 +126,25 @@ main {
 }
 
 
+/* Progress bar styles */
+.progress-bar {
+  width: 100%;
+  background-color: #e5e7eb; /* Light gray background */
+  border-radius: 8px;
+  height: 16px;
+  margin-bottom: 16px;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+.progress-bar-blue {
+  background-color: #3b82f6; /* Blue color */
+}
+
+.progress-bar-green {
+  background-color: #22c55e; /* Green color */
+}

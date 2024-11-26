@@ -32,22 +32,21 @@ const Category = () => {
           }
         : category
     );
-    console.log('Updated List:', updatedList); // Debug log
+    console.log('Updated List:', updatedList);
     setQuestionList(updatedList);
   };
 
   const ProgressBar = ({ progress }) => (
-    <div style={{ width: '100%', backgroundColor: '#e5e7eb', borderRadius: '8px', height: '16px', marginBottom: '16px' }}>
+    <div className="progress-bar">
       <div
-        style={{
-          width: `${progress}%`,
-          backgroundColor: '#3b82f6',
-          height: '100%',
-          borderRadius: '8px',
-        }}
+        className={`progress-bar-inner ${
+          progress === 100 ? 'progress-bar-green' : 'progress-bar-blue'
+        }`}
+        style={{ width: `${progress}%` }}
       ></div>
     </div>
   );
+  
 
   return (
     <div>
