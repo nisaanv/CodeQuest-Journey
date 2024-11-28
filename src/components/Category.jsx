@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
-import categories from './categoriesData';
+import categories from './Questions';
 
 const Category = () => {
   const calculateProgress = (questions) => {

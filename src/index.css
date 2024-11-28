@@ -12,12 +12,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  @apply bg-gray-100 text-gray-900;
-  @apply min-h-screen flex flex-col;
+  background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+  color: #1f2937; /* Tailwind's text-gray-900 */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .dark body {
-  @apply bg-gray-900 text-gray-100; /* Dark mode styles */
+  background-color: rgb(13, 10, 10);
+  color: #f3f4f6;
 }
 
 a {
@@ -116,7 +120,7 @@ footer {
 }
 
 main {
-  @apply flex-grow; /* Ensures the main content area takes up remaining space */
+  flex-grow: 1; /* Ensures the main content area takes up remaining space */
 }
 
 
@@ -142,9 +146,9 @@ main {
 }
 
 .progress-bar-blue {
-  background-color: #3b82f6; /* Blue color */
+  background-color: #3b82f6;
 }
 
 .progress-bar-green {
-  background-color: #22c55e; /* Green color */
+  background-color: #22c55e;
 }

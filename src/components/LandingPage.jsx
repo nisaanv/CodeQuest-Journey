@@ -8,7 +8,12 @@ const LandingPage = () => {
       <header className="bg-gray-900 text-white p-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">Welcome to CodeQuest Journey</h1>
-          {/* <Link to="/Home" className="text-lg font-semibold hover:underline">Get Started</Link> */}
+          <button
+          onClick={() => document.documentElement.classList.toggle('dark')}
+          className="bg-blue-500 text white py-2 px-4 rounded-md hover:bg-blue-600 "
+          >
+            Dark Mode
+          </button>
         </div>
       </header>
 
